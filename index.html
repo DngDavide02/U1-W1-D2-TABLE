@@ -3,31 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Blog Epicode</title>
   </head>
   <body>
+    <!-- header -->
     <header>
-      <h1>Epicode - il blog dei developers</h1>
       <img src="./assets/img/logo.svg" alt="logo-epicode" />
+      <h1>Epicode - il blog dei developers</h1>
       <button>Home</button>
       <button>Articoli</button>
       <button>Lavora con noi</button>
     </header>
 
+    <!-- Main -->
     <main>
       <h2>Come creare un template per i post di Mario Rossi</h2>
       <h4>pubblicato il 25-10-2020</h4>
       <div id="principale">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut dolore possimus, numquam ratione pariatur est a modi impedit corporis nihil sit atque hic
-          expedita quas mollitia officiis ipsum provident nesciunt?
-        </p>
+        <p>la prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a tutte le pagine</p>
         <p>le varie aree saranno quindi suddivise in:</p>
         <ul>
           <li>contenuti di intestazione nel file &lt;header&gt;</li>
           <li>contenuti centrali variabili del tag &lt;main&gt; (corpo principale)</li>
           <li>contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
         </ul>
+        <hr />
         <h5>formattazione del codice</h5>
         <p>il testo dell'articolo dovra essere formattato per identificare tutte le parti da selezionare con i CSS. Perciò i passi saranno:</p>
         <ol>
@@ -36,7 +37,9 @@
           <li>Applicare gli stili CSS</li>
         </ol>
         <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressocchè totale</p>
-        <table>
+
+        <!-- tabella -->
+        <table id="tabella">
           <caption>
             Diffusione dei CSS
           </caption>
@@ -73,48 +76,58 @@
         </table>
         <p>
           Un test di validazione potrà essere fatto tramite il tool online
-          <a href="https://www.superprof.it/blog/quiz-programmazione-linguaggi-informatici/">superprof</a> dedicato allo scopo. Una volta ottimizzato il tutto,
-          avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers come loro:
+          <a href="https://www.superprof.it/blog/quiz-programmazione-linguaggi-informatici/" id="link">superprof</a> dedicato allo scopo. Una volta ottimizzato
+          il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers come loro:
         </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/o6YtFK7QFBw?si=EbupK6uIZWx6E7y5"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div id="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/o6YtFK7QFBw?si=EbupK6uIZWx6E7y5"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
+
+      <!-- newsletter -->
       <div id="newsletter">
         <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
-        <form>
+        <form id="email">
           <input type="email" placeholder="Inserisci la tua email" required />
           <button type="submit">Iscriviti</button>
         </form>
       </div>
     </main>
+    <hr />
+
+    <!-- Footer -->
     <footer>
+      <h4>Articoli correlati</h4>
       <div id="correlati">
-        <h5>Articoli correlati</h5>
-        <div id="corr.1">
-          <p>validare il codice HTML</p>
-          <p>Categoria: develop</p>
-          <p>Data: 18-09-2020</p>
-        </div>
+        <h5>validare il codice HTML</h5>
+        <p>Categoria: develop</p>
+        <p>Data: 18-09-2020</p>
+      </div>
 
-        <div id="corr.2">
-          <p>validare il codice HTML</p>
-          <p>Categoria: develop</p>
-          <p>Data: 18-09-2020</p>
-        </div>
+      <div id="correlati">
+        <h5>Correggere la sintassi</h5>
+        <p>Categoria: develop</p>
+        <p>Data: 16-09-2020</p>
+      </div>
 
-        <div id="corr.3">
-          <p>validare il codice HTML</p>
-          <p>Categoria: develop</p>
-          <p>Data: 18-09-2020</p>
-        </div>
+      <div id="correlati">
+        <h5>Meno Kb nella pagina</h5>
+        <p>Categoria: ottimizzazione</p>
+        <p>Data: 30-09-2020</p>
+      </div>
+      <div>
+        <p>Blog Epicode &copy;2023</p>
+        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 00112233.</p>
+        <a href="https://gmail.com" id="link">info@epicode.school</a>
       </div>
     </footer>
   </body>
